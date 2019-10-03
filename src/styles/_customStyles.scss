@@ -1,0 +1,62 @@
+html {
+  font-size: 16px;
+
+  @media (max-width: 350px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    $additional-dark,
+    $additional-light
+  );
+}
+
+footer {
+  color: lighten($additional-light, 20%);
+
+  @media (max-height: 350px) {
+    display: none;
+  }
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.65);
+
+  #img-div {
+    @media (max-height: 350px) {
+      display: flex !important;
+      justify-content: center;
+      img {
+        height: 25vh;
+      }
+    }
+  }
+}
+
+.text-shadow {
+  text-shadow: $text-shadow;
+}
+
+a {
+  color: $link-color;
+  @include font-size(3rem);
+  &:hover {
+    color: $link-hover-color;
+    text-shadow: $text-shadow-no-color rgba($secondary, 0.45);
+    transition: text-shadow 0.5s, color 0.5s;
+  }
+  transition: text-shadow 0.5s, color 0.5s;
+}
+
+h1,
+h2 {
+  &:hover {
+    text-shadow: $text-shadow-no-color rgba($secondary, 0.45);
+    font-weight: 550;
+    transition: text-shadow 1s, font-weight 1s;
+  }
+  transition: text-shadow 1s, font-weight 1s;
+}

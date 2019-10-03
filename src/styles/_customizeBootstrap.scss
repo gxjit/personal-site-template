@@ -1,0 +1,36 @@
+$additional-dark: #654ea3;
+$additional-light: #eaafc8;
+
+$primary: lighten($additional-dark, 25%);
+$secondary: #4e6172;
+
+$enable-shadows: true;
+
+$link-color: $secondary;
+$link-hover-color: darken($secondary, 22%);
+
+$box-shadow-no-color: 0.3rem 0.6rem 0.4rem;
+$box-shadow: $box-shadow-no-color rgba($secondary, 0.2);
+
+$text-shadow-no-color: 0.2rem 0.4rem 0.22rem;
+$text-shadow: $text-shadow-no-color rgba($secondary, 0.15);
+
+$font-family-base: 'Montserrat', sans-serif;
+
+$enable-responsive-font-sizes: true;
+
+$sizes: ();
+
+$sizes: map-merge(
+  (
+    25: 25%,
+    35: 35%,
+    40: 40%,
+    50: 50%,
+    75: 75%,
+    85: 85%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);

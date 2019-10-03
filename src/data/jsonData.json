@@ -1,0 +1,11 @@
+{
+  "imgPath": "./assets/media/avatar.jpg",
+  "title": "Friedrich Nietzsche",
+  "subtitle": "Philosopher",
+  "links": {
+    "fab fa-github": "https://github.com/gxjit",
+    "fas fa-file-alt": "/",
+    "fas fa-envelope-open-text": "contact"
+  },
+  "formSubmit": ""
+}
